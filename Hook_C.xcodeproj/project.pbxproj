@@ -13,6 +13,7 @@
 		E79D2ED82252F5F300F0D84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79D2ED72252F5F300F0D84A /* Assets.xcassets */; };
 		E79D2EDB2252F5F300F0D84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79D2ED92252F5F300F0D84A /* LaunchScreen.storyboard */; };
 		E79D2EDE2252F5F300F0D84A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D2EDD2252F5F300F0D84A /* main.m */; };
+		E79D2EE72252F60C00F0D84A /* CYLHookCore.c in Sources */ = {isa = PBXBuildFile; fileRef = E79D2EE62252F60B00F0D84A /* CYLHookCore.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E79D2EDA2252F5F300F0D84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79D2EDC2252F5F300F0D84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79D2EDD2252F5F300F0D84A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E79D2EE52252F60B00F0D84A /* CYLHookCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLHookCore.h; sourceTree = "<group>"; };
+		E79D2EE62252F60B00F0D84A /* CYLHookCore.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = CYLHookCore.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		E79D2ECD2252F5F200F0D84A /* Hook_C */ = {
 			isa = PBXGroup;
 			children = (
+				E79D2EE42252F5F800F0D84A /* Classes */,
 				E79D2ECE2252F5F200F0D84A /* AppDelegate.h */,
 				E79D2ECF2252F5F200F0D84A /* AppDelegate.m */,
 				E79D2ED12252F5F200F0D84A /* ViewController.h */,
@@ -65,10 +69,19 @@
 				E79D2ED42252F5F200F0D84A /* Main.storyboard */,
 				E79D2ED72252F5F300F0D84A /* Assets.xcassets */,
 				E79D2ED92252F5F300F0D84A /* LaunchScreen.storyboard */,
-				E79D2EDC2252F5F300F0D84A /* Info.plist */,
 				E79D2EDD2252F5F300F0D84A /* main.m */,
+				E79D2EDC2252F5F300F0D84A /* Info.plist */,
 			);
 			path = Hook_C;
+			sourceTree = "<group>";
+		};
+		E79D2EE42252F5F800F0D84A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E79D2EE52252F60B00F0D84A /* CYLHookCore.h */,
+				E79D2EE62252F60B00F0D84A /* CYLHookCore.c */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79D2EE72252F60C00F0D84A /* CYLHookCore.c in Sources */,
 				E79D2ED32252F5F200F0D84A /* ViewController.m in Sources */,
 				E79D2EDE2252F5F300F0D84A /* main.m in Sources */,
 				E79D2ED02252F5F200F0D84A /* AppDelegate.m in Sources */,
@@ -288,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WU6NZ66PC;
 				INFOPLIST_FILE = Hook_C/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WU6NZ66PC;
 				INFOPLIST_FILE = Hook_C/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

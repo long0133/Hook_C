@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Classes/CYLHookCore.h"
 
 @interface AppDelegate ()
 
@@ -14,10 +15,16 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    CallTraceTrackStart();
+    
+    NSLog(@"%ld",[self test:22 obj:application]);
     return YES;
+}
+
+- (NSInteger)test:(NSInteger)a obj:(id)b{
+    NSLog(@"%ld, %@",a,b);
+    return 1;
 }
 
 
